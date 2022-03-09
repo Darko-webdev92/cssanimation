@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+html{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    width: 60vw;
+    height: 60vh;
+    margin: 5rem auto;
+    border: 0.1rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.container article{
+    width: 50%;
+    height: 50%;
+}
+
+.container article:nth-child(1), .container article:nth-child(4){
+    background-color: #DD4838;
+}
+
+.container article:nth-child(2), .container article:nth-child(3){
+    background-color: #E84C3C;
+}
+
+/* IITEM 1 */
+.item-1{
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
+    letter-spacing: 0.2rem;
+}
+
+.item-animation-1{
+    /* position: absolute; */
+    width: 50%;
+    height: 5%;
+    margin-left: 25%;
+    background-color: white;
+    /* animation: item-1 5s infinite linear; */
+    opacity: 0;
+    animation-name: item-1;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /* animation-fill-mode: both; */
+}
+
+.item-1 p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #E84C3C;
+}
+
+@keyframes item-1{
+    0%   {
+        width: 0%;
+        height: 5%;
+        background-color: white;
+        opacity: 1;
+    }
+        
+    50%  {
+        width: 50%;
+        background-color: white;
+        height: 5%;
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+
+/* ITEM-2 */
+.item-2{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    letter-spacing: 0.2rem;
+}
+
+.item-animation-2{
+    width: 50%;
+    height: 12%;
+    margin-left: 25%;
+    background-color: white;
+    opacity: 0;
+    animation-name: item-2;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.item-2 p{
+    position:absolute;
+    top: 44.2%;
+    left: 25%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes item-2{
+    0%   {
+        width: 0%;
+        height: 12%;
+        background-color: white;
+        opacity: 1;
+    }
+        
+    50%  {
+        width: 50%;
+        background-color: white;
+        height: 12%;
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+/* ITEM-3 */
+
+.item-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item-3 div{
+    height: 50%;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: item-3  1s infinite linear;; 
+
+}
+.dot-1 ,.dot-2 , .dot-3{
+    margin: 3%;
+    width: 5%;
+    height: 10%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.dot-1, .dot-3{
+    opacity: 0.5;
+}
+
+@keyframes item-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+/* ITEM 4 */
+
+.item-4{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    letter-spacing: 0.2rem;
+}
+
+.item-4 div:first-child{
+    position: relative;
+    left: 160px;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: item-4-1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.item-animation-4{
+    width: 15%;
+    height: 30%;
+    margin-left: 35%;
+    background-color: white;
+    opacity: 0;
+    animation-name: item-4;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.item-4 p{
+    position:absolute;
+    top: 37%;
+    left: 35%;
+    text-align: center;
+    width: 15%;
+    height: 30%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes item-4{
+    0%   {
+        width: 0%;
+        background-color: white;
+        opacity: 1;
+    }
+        
+    50%  {
+        width: 15%;
+        background-color: white;
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+@keyframes item-4-1{
+
+    0%{
+        left: 150px;
+        /* top: -1px; */
+        
+    
+    }
+    25%  
+    {
+        left:230px;
+        top:0px;
+    }
+    50%{
+        left:230px;
+        top:75px;
+    }
+    75%{
+        left: 150px;
+        top:75px;
+    }
+
+    100%{
+        left: 150px;
+        /* top:75px; */
+    }
+
+}
+
+ 
